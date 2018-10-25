@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<META> 
+<html >
+  <head>
+      <style>p.indent{ padding-left: 111111.8em }</style>
+    <meta charset="UTF-8">
+    <title>Social Media Counters</title>
+    
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body onLoad="readFile();">
+      <script src="js/reader.js"></script>
+
+    <div class="container">
+   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+ </div>
+
+ 
+ <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+ 
+    <div id="wrapper" class="square" >
+        <p class="indent">&nbsp;</p>
+        <p class="indent">&nbsp;</p>
+        <a class="item twitter"><i class="fa fa-twitter "></i><div id="twit"></div>Followers<br><br><div>@MonashTS</div></a>
+      <a class="item facebook"><i class="fa fa-facebook"></i><div id="facey"></div>Likes<br><br><div>Monash Tech School</div></a>
+      <a class="item instagram"><i class="fa fa-instagram"></i><div id="insta"> </div>Followers<br><br><div>Monashtechschool</div></a>
+
+      
+    </div>
+   
+    <script src="js/api.js"></script>
+      
+    <script>
+      $('#wrapper').SocialCounter({
+        //Get Usernames
+        dribbble_user: 'username_here',
+        facebook_user: 'MonashTechSchool',
+        instagram_user: 'MonashTechSchool',
+        google_plus_id: 'username_here',
+        instagram_user_sandbox: 'username_here',
+        youtube_user: 'username_here',
+        youtube_user_square: 'username_here',
+        pinterest_user: 'pinterest_username_here',
+        soundcloud_user_id: 'user_id_here',
+        vimeo_user: 'username_here',
+        github_user: 'username_here',
+        twitter_user: 'monashts',
+        behance_user: 'username_here',
+        vine_user: 'user_id_here',
+        vk_id: 'user_id_here',
+        foursquare_user: 'username_here',
+        tumblr_username: 'username_here',
+        twitch_username:'username_here',
+        spotify_artist_id:'artist_id_here',
+        spotify_user_id:'user_id_here',
+        //Get Access Tokens,keys,client_ids
+        dribbble_token: 'token_here',
+        instagram_token:'5002241835.1677ed0.a477d18e1d934be2b3e6c88da8ef602b',
+        google_plus_key:'key_here',
+        facebook_token:'EAACEdEose0cBAOu1a5JQLieCBe9BWImypNZCrFx7RAefma2pI9GHs4WZCEEQ61TYdra5zW4SbbKQ8vL8PZBLiyz4wW6osmdN5cWZB8F45UTJ34ZCU3sZAemLoeys2hHX4mGCGEbVYouIf6HhzyxgHeNyyKSDEW8rDrR0p3r3jYGjbjtZA5Xf2IogrfFgHtl1jJtZB7dKoEFFFDVAj0NcW6uX',
+        youtube_key:'key_here',
+        twitch_client_id:'client_id_here',
+        soundcloud_client_id:'client_id_here',
+        vimeo_token:'token_here',
+        behance_client_id:'client_id_here',
+        foursquare_token:'token_here',
+        linkedin_oauth: 'token_here' 
+      });
+    </script>
+  </body>
+</html>
